@@ -1,8 +1,6 @@
+#include <iostream>
 
-// #include <iostream>
-#include <stdio.h> 
-
-#include "../emeasure.h" 
+#include "../../emeasure.h" 
 
 using namespace std;
 
@@ -11,10 +9,14 @@ int main (int argc, char ** argv) {
 	float x1 = 4.78612432701;
 
 	assert(argc == 2); 
-	int sockfd = start_emeasure(string("jet-0-005-ener-") + string(argv[1]) + ".csv"); 
+	int sockfd = start_emeasure(string("jet-mix") + string(argv[1]) + ".csv"); 
+
+	for (int rr = 0 ; rr < 100 ; rr++) {
 
 	for (int ii = 0 ; ii < 10000000 ; ii++) {
 	double ____expr_0 = ((double)x1 + (((((((double)((((float)2.0 * x1) * (((((float)3.0 * (x1 * x1)) + ((float)2.0 * x2)) - x1) / ((x1 * x1) + (float)1.0))) * ((((((float)3.0 * (x1 * x1)) + ((float)2.0 * x2)) - x1) / ((x1 * x1) + (float)1.0)) - (float)3.0)) + (double)((x1 * x1) * (((float)4.0 * (((((float)3.0 * (x1 * x1)) + ((float)2.0 * x2)) - x1) / ((x1 * x1) + (float)1.0))) - (float)6.0))) * ((double)(x1 * x1) + (double)1.0)) + (double)(((float)3.0 * (x1 * x1)) * (((((float)3.0 * (x1 * x1)) + ((float)2.0 * x2)) - x1) / ((x1 * x1) + (float)1.0)))) + (double)((x1 * x1) * x1)) + (double)x1) + (double)((float)3.0 * (((((float)3.0 * (x1 * x1)) + ((float)2.0 * x2)) - x1) / ((x1 * x1) + (float)1.0)))));
+
+}
 
 }
 
