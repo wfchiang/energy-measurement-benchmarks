@@ -7,6 +7,8 @@ E = 5e-05
 #include <stdlib.h>
 #include <time.h>  
 
+#include "../../emeasure.h" 
+
 
 // #define N 512 
 #define K 100000000
@@ -28,6 +30,9 @@ int main (int argc, char **argv) {
 
   // start energy measurement here 
   // may need to sleep a little bit before here... 
+  sleep(2); 
+  assert(argc == 2); 
+  int sockfd = start_emeasure(string("balr-all64-") + string(argv[1]) + ".csv"); 
 
   for (int r = 0 ; r < N_REPEATS ; r++) {
 
@@ -41,6 +46,7 @@ int main (int argc, char **argv) {
   }
 
   // stop energy measurement here 
+  stop_emeasure(sockfd); 
 
   return 0; 
 }
