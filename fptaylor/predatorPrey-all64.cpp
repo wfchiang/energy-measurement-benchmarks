@@ -3,10 +3,10 @@
 using namespace std;
 
 int main (int argc, char **argv) {
-	float x = 0.136636813383;
+	double x = 0.125714616806;
 
 	for (int ii = 0 ; ii < 10000000 ; ii++) {
-	float ____expr_0 = ((((float)4.0 * x) * x) / ((float)1.0 + ((x / (float)1.11) + (x / (float)1.11))));
+	double ____expr_0 = ((((double)4.0 * x) * x) / ((double)1.0 + ((x / (double)1.11) + (x / (double)1.11))));
 
 }
 
