@@ -16,12 +16,12 @@ using namespace std;
 int main (int argc, char **argv) {
   srand(time(NULL));
 
-  double data[25]; 
+  float data[25]; 
   
-  double grid0[25]; 
-  double grid1[25];
+  float grid0[25]; 
+  float grid1[25];
 
-  double *gfrom, *gto, *gtemp; 
+  float *gfrom, *gto, *gtemp; 
 
   for (int i = 0 ; i < 25 ; i++) { 
     data[i] = (double)(rand() % K) / (double)K;
@@ -34,13 +34,13 @@ int main (int argc, char **argv) {
   // may need to sleep a little bit before here... 
   sleep(2); 
   assert(argc == 2); 
-  int sockfd = start_emeasure(string("stencil-all64-") + string(argv[1]) + ".csv"); 
+  int sockfd = start_emeasure(string("stencil-all32-") + string(argv[1]) + ".csv"); 
 
   
   for (int r = 0 ; r < N_REPEATS ; r++) {
 
-    memcpy(grid0, data, sizeof(double)*25);
-    memcpy(grid1, data, sizeof(double)*25);
+    memcpy(grid0, data, sizeof(float)*25);
+    memcpy(grid1, data, sizeof(float)*25);
 
     gfrom = grid0;
     gto   = grid1; 
@@ -55,7 +55,7 @@ int main (int argc, char **argv) {
 	     gfrom[(x+1)*5+y] +
 	     gfrom[x*5+y-1] +
 	     gfrom[x*5+y+1]) * 
-	    (0.2); 
+	    (0.2f); 
 	}
       }
       
