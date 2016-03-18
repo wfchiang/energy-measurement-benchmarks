@@ -37,7 +37,6 @@ int main (int argc, char **argv) {
   assert(argc == 2); 
   int sockfd = start_emeasure(string("balr-all64") + string(argv[1]) + ".csv"); 
 
-
   for (int r = 0 ; r < N_REPEATS ; r++) {
 
     memcpy(arr, data, sizeof(double)*512); 

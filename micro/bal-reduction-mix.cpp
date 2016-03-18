@@ -36,7 +36,6 @@ int main (int argc, char **argv) {
   assert(argc == 2); 
   int sockfd = start_emeasure(string("balr-mix") + string(argv[1]) + ".csv"); 
 
-
   for (int r = 0 ; r < N_REPEATS ; r++) {
 
     memcpy(arr, data, sizeof(float)*512); 
