@@ -1,0 +1,33 @@
+
+./bal-reduction-all-32 1 
+./bal-reduction-all-32 2
+./bal-reduction-all-32 3 
+./bal-reduction-all-32 4 
+./bal-reduction-all-32 5 
+./bal-reduction-all-32 6 
+./bal-reduction-all-32 7 
+./bal-reduction-all-32 8 
+./bal-reduction-all-32 9 
+./bal-reduction-all-32 10  
+
+./bal-reduction-mix 1 
+./bal-reduction-mix 2
+./bal-reduction-mix 3 
+./bal-reduction-mix 4 
+./bal-reduction-mix 5 
+./bal-reduction-mix 6 
+./bal-reduction-mix 7 
+./bal-reduction-mix 8 
+./bal-reduction-mix 9 
+./bal-reduction-mix 10  
+
+./bal-reduction-all-64 1 
+./bal-reduction-all-64 2
+./bal-reduction-all-64 3 
+./bal-reduction-all-64 4 
+./bal-reduction-all-64 5 
+./bal-reduction-all-64 6 
+./bal-reduction-all-64 7 
+./bal-reduction-all-64 8 
+./bal-reduction-all-64 9 
+./bal-reduction-all-64 10  
