@@ -1,6 +1,6 @@
 
 CXX=arm-linux-gnueabihf-g++
-CXXFLAGS=-O0 -mfpu=neon 
+CXXFLAGS=-O0 -mfpu=neon -D__USE_MEMCPY 
 
 all: bal-reduction-all-32 bal-reduction-mix bal-reduction-all-64 micro-2d-stencil-all32 micro-2d-stencil-mix1 micro-2d-stencil-mix2 micro-2d-stencil-all64
 
@@ -28,4 +28,7 @@ clean:
 	-rm bal-reduction-mix 
 	-rm bal-reduction-all-64
 
+	-rm micro-2d-stencil-all32 
+	-rm micro-2d-stencil-mix1
+	-rm micro-2d-stencil-mix2 
 	-rm micro-2d-stencil-all64 

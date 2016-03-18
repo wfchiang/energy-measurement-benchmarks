@@ -18,8 +18,8 @@ int main (int argc, char **argv) {
 
   float data[25]; 
 
-  float grid32_0[25]; 
-  float grid32_1[25]; 
+  float  grid32_0[25]; 
+  float  grid32_1[25]; 
   double grid64_0[25]; 
   double grid64_1[25];
 
@@ -42,8 +42,15 @@ int main (int argc, char **argv) {
   
   for (int r = 0 ; r < N_REPEATS ; r++) {
 
+#ifdef __USE_MEMCPY
     memcpy(grid32_0, data, sizeof(float)*25);
     memcpy(grid32_1, data, sizeof(float)*25);
+#else 
+    for (int i = 0 ; i < 25 ; i++) {
+      grid32_0[i] = data[i]; 
+      grid32_1[i] = data[1];
+    }
+#endif 
 
     g32from = grid32_0; 
     g32to   = grid32_1;
@@ -51,7 +58,7 @@ int main (int argc, char **argv) {
     g64from = grid64_0; 
     g64to   = grid64_1; 
 
-    for (int iter = 0 ; iter < 4 ; iter++) {
+    for (int iter = 0 ; iter < 3 ; iter++) {
 
       for (int x = 1 ; x < 4 ; x++) {
 	for (int y = 1 ; y < 4 ; y++) { 
@@ -71,10 +78,19 @@ int main (int argc, char **argv) {
 
     }
 
-    for (int i = 0 ; i < 25 ; i++) {
-      g64from[i] = g32from[i]; 
-      g64to[i]   = g32to[i]; 
+
+    for (int x = 1 ; x < 4 ; x++) {
+      for (int y = 1 ; y < 4 ; y++) { 
+	g64from[x*5+y] =
+	  (double)(g32from[x*5+y] +
+		   g32from[(x-1)*5+y] +
+		   g32from[(x+1)*5+y] +
+		   g32from[x*5+y-1] +
+		   g32from[x*5+y+1]) * 
+	  (0.2); 
+      }
     }
+
 
     // for (int iter = 0 ; iter < 1 ; iter++) {
 

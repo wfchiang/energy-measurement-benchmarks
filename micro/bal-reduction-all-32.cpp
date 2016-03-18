@@ -37,7 +37,12 @@ int main (int argc, char **argv) {
 
   for (int r = 0 ; r < N_REPEATS ; r++) {
 
+#ifdef __USE_MEMCPY
     memcpy(arr, data, sizeof(float)*512); 
+#else
+    for (int i = 0 ; i < 512 ; i++) 
+      arr[i] = data[i]; 
+#endif 
 
     for (int g = 256 ; g > 0 ; g = g / 2) {
 

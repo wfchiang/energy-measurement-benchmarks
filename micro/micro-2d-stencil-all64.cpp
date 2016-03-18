@@ -39,8 +39,15 @@ int main (int argc, char **argv) {
   
   for (int r = 0 ; r < N_REPEATS ; r++) {
 
+#ifdef __USE_MEMCPY
     memcpy(grid0, data, sizeof(double)*25);
     memcpy(grid1, data, sizeof(double)*25);
+#else 
+    for (int i = 0 ; i < 25 ; i++) {
+      grid0[i] = data[i]; 
+      grid1[i] = data[i]; 
+    }
+#endif 
 
     gfrom = grid0;
     gto   = grid1; 

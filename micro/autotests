@@ -1,33 +1,78 @@
 
-./bal-reduction-all-32 1 
-./bal-reduction-all-32 2
-./bal-reduction-all-32 3 
-./bal-reduction-all-32 4 
-./bal-reduction-all-32 5 
-./bal-reduction-all-32 6 
-./bal-reduction-all-32 7 
-./bal-reduction-all-32 8 
-./bal-reduction-all-32 9 
-./bal-reduction-all-32 10  
+./micro-2d-stencil-all32 1
+./micro-2d-stencil-all32 2
+./micro-2d-stencil-all32 3
+./micro-2d-stencil-all32 4
+./micro-2d-stencil-all32 5
+./micro-2d-stencil-all32 6
+./micro-2d-stencil-all32 7
+./micro-2d-stencil-all32 8
+./micro-2d-stencil-all32 9
+./micro-2d-stencil-all32 10 
 
-./bal-reduction-mix 1 
-./bal-reduction-mix 2
-./bal-reduction-mix 3 
-./bal-reduction-mix 4 
-./bal-reduction-mix 5 
-./bal-reduction-mix 6 
-./bal-reduction-mix 7 
-./bal-reduction-mix 8 
-./bal-reduction-mix 9 
-./bal-reduction-mix 10  
+./micro-2d-stencil-mix1 1
+./micro-2d-stencil-mix1 2
+./micro-2d-stencil-mix1 3
+./micro-2d-stencil-mix1 4
+./micro-2d-stencil-mix1 5
+./micro-2d-stencil-mix1 6
+./micro-2d-stencil-mix1 7
+./micro-2d-stencil-mix1 8
+./micro-2d-stencil-mix1 9
+./micro-2d-stencil-mix1 10 
 
-./bal-reduction-all-64 1 
-./bal-reduction-all-64 2
-./bal-reduction-all-64 3 
-./bal-reduction-all-64 4 
-./bal-reduction-all-64 5 
-./bal-reduction-all-64 6 
-./bal-reduction-all-64 7 
-./bal-reduction-all-64 8 
-./bal-reduction-all-64 9 
-./bal-reduction-all-64 10  
+./micro-2d-stencil-mix2 1
+./micro-2d-stencil-mix2 2
+./micro-2d-stencil-mix2 3
+./micro-2d-stencil-mix2 4
+./micro-2d-stencil-mix2 5
+./micro-2d-stencil-mix2 6
+./micro-2d-stencil-mix2 7
+./micro-2d-stencil-mix2 8
+./micro-2d-stencil-mix2 9
+./micro-2d-stencil-mix2 10 
+
+./micro-2d-stencil-all64 1
+./micro-2d-stencil-all64 2
+./micro-2d-stencil-all64 3
+./micro-2d-stencil-all64 4
+./micro-2d-stencil-all64 5
+./micro-2d-stencil-all64 6
+./micro-2d-stencil-all64 7
+./micro-2d-stencil-all64 8
+./micro-2d-stencil-all64 9
+./micro-2d-stencil-all64 10 
+
+
+# ./bal-reduction-all-32 1 
+# ./bal-reduction-all-32 2
+# ./bal-reduction-all-32 3 
+# ./bal-reduction-all-32 4 
+# ./bal-reduction-all-32 5 
+# ./bal-reduction-all-32 6 
+# ./bal-reduction-all-32 7 
+# ./bal-reduction-all-32 8 
+# ./bal-reduction-all-32 9 
+# ./bal-reduction-all-32 10  
+
+# ./bal-reduction-mix 1 
+# ./bal-reduction-mix 2
+# ./bal-reduction-mix 3 
+# ./bal-reduction-mix 4 
+# ./bal-reduction-mix 5 
+# ./bal-reduction-mix 6 
+# ./bal-reduction-mix 7 
+# ./bal-reduction-mix 8 
+# ./bal-reduction-mix 9 
+# ./bal-reduction-mix 10  
+
+# ./bal-reduction-all-64 1 
+# ./bal-reduction-all-64 2
+# ./bal-reduction-all-64 3 
+# ./bal-reduction-all-64 4 
+# ./bal-reduction-all-64 5 
+# ./bal-reduction-all-64 6 
+# ./bal-reduction-all-64 7 
+# ./bal-reduction-all-64 8 
+# ./bal-reduction-all-64 9 
+# ./bal-reduction-all-64 10  
