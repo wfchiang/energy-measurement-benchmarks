@@ -1,47 +1,6 @@
 
-./micro-2d-stencil-all32 1
-./micro-2d-stencil-all32 2
-./micro-2d-stencil-all32 3
-./micro-2d-stencil-all32 4
-./micro-2d-stencil-all32 5
-./micro-2d-stencil-all32 6
-./micro-2d-stencil-all32 7
-./micro-2d-stencil-all32 8
-./micro-2d-stencil-all32 9
-./micro-2d-stencil-all32 10 
 
-./micro-2d-stencil-mix1 1
-./micro-2d-stencil-mix1 2
-./micro-2d-stencil-mix1 3
-./micro-2d-stencil-mix1 4
-./micro-2d-stencil-mix1 5
-./micro-2d-stencil-mix1 6
-./micro-2d-stencil-mix1 7
-./micro-2d-stencil-mix1 8
-./micro-2d-stencil-mix1 9
-./micro-2d-stencil-mix1 10 
 
-./micro-2d-stencil-mix2 1
-./micro-2d-stencil-mix2 2
-./micro-2d-stencil-mix2 3
-./micro-2d-stencil-mix2 4
-./micro-2d-stencil-mix2 5
-./micro-2d-stencil-mix2 6
-./micro-2d-stencil-mix2 7
-./micro-2d-stencil-mix2 8
-./micro-2d-stencil-mix2 9
-./micro-2d-stencil-mix2 10 
-
-./micro-2d-stencil-all64 1
-./micro-2d-stencil-all64 2
-./micro-2d-stencil-all64 3
-./micro-2d-stencil-all64 4
-./micro-2d-stencil-all64 5
-./micro-2d-stencil-all64 6
-./micro-2d-stencil-all64 7
-./micro-2d-stencil-all64 8
-./micro-2d-stencil-all64 9
-./micro-2d-stencil-all64 10 
 
 
 # ./bal-reduction-all-32 1 

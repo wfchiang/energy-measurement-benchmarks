@@ -10,7 +10,7 @@ using namespace std;
 
 // #define D 5
 #define K 100000
-#define N_REPEATS 10000000 
+#define N_REPEATS 100000000 
 
 
 int main (int argc, char **argv) {
