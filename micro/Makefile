@@ -2,7 +2,7 @@
 CXX=arm-linux-gnueabihf-g++
 CXXFLAGS=-O0 -mfpu=neon -D__USE_MEMCPY 
 
-all: bal-reduction-all-32 bal-reduction-mix bal-reduction-all-64 micro-2d-stencil-all32 micro-2d-stencil-mix1 micro-2d-stencil-mix2 micro-2d-stencil-all64 horner-all32 horner-adapt horner-all64 
+all: bal-reduction-all-32 bal-reduction-mix bal-reduction-all-64 micro-2d-stencil-all32 micro-2d-stencil-mix1 micro-2d-stencil-mix2 micro-2d-stencil-all64 horner-all32 horner-adapt horner-all64 gaussian-x-ave-all32 gaussian-x-ave-adapt gaussian-x-ave-all64 
 
 
 
@@ -29,6 +29,13 @@ horner-adapt: horner-adapt.cpp
 horner-all64: horner-all64.cpp 
 
 
+gaussian-x-ave-all32: gaussian-x-ave-all32.cpp 
+
+gaussian-x-ave-adapt: gaussian-x-ave-adapt.cpp 
+
+gaussian-x-ave-all64: gaussian-x-ave-all64.cpp 
+
+
 clean: 
 	-rm *~
 
@@ -41,4 +48,10 @@ clean:
 	-rm micro-2d-stencil-mix2 
 	-rm micro-2d-stencil-all64 
 
+	-rm horner-all32 
+	-rm horner-adapt
 	-rm horner-all64 
+
+	-rm gaussian-x-ave-all32
+	-rm gaussian-x-ave-adapt 
+	-rm gaussian-x-ave-all64
