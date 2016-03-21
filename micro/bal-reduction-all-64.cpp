@@ -8,6 +8,7 @@ E = 5e-05
 #include <string.h> 
 #include <time.h>  
 
+#include "micro-common.h" 
 #include "../emeasure.h" 
 
 
@@ -25,9 +26,7 @@ int main (int argc, char **argv) {
   double arr[512]; 
 
   for (int i = 0 ; i < 512 ; i++) {
-    data[i] = (double)(rand() % K) / (double)(K); 
-    if (rand() % 2 == 1) 
-      data[i] = -1.0 * data[i]; 
+    data[i] = randFP64(-1.0, 1.0); 
   }
 
 

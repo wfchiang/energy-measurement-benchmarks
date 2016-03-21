@@ -3,6 +3,7 @@
 #include <string.h> 
 #include <time.h>
 
+#include "micro-common.h" 
 #include "../emeasure.h" 
 
  
@@ -19,21 +20,17 @@ int main (int argc, char **argv) {
   double x64; 
 
   for (int i = 0 ; i < 10 ; i++) {
-    coeff64[i] = (double)(rand() % K) / (double)K; 
-    if (rand() % 2 == 1) 
-      coeff64[i] = -1.0 * coeff64[i]; 
+    coeff64[i] = randFP64(-1.0, 1.0); 
   }
 
-  x64 = (double)(rand() % K) / (double)K; 
-  if (rand() % 2 == 1) 
-    x64 = -1.0 * x64; 
+  x64 = randFP64(-1.0, 1.0); 
 
 
   // start energy measurement here 
   // may need to sleep a little bit before here... 
   sleep(2); 
   assert(argc == 2); 
-  // int sockfd = start_emeasure(string("horner-all64-") + string(argv[1]) + ".csv"); 
+  int sockfd = start_emeasure(string("horner-adapt-") + string(argv[1]) + ".csv"); 
     
   
   for (int r = 0 ; r < N_REPEATS ; r++) {
@@ -75,7 +72,7 @@ int main (int argc, char **argv) {
   }
 
 
-  // stop_emeasure(sockfd); 
+  stop_emeasure(sockfd); 
   
   
   return 0; 

@@ -91,6 +91,15 @@ int main (int argc, char **argv) {
       }
     }
 
+    for (int y = 0 ; y < 5 ; y++) {
+      g64to[y]    = g64from[y]    = g32from[y]; 
+      g64to[20+y] = g64from[20+y] = g32from[20+y]; 
+    }
+    for (int x = 1 ; x < 4 ; x++) {
+      g64to[x*5]   = g64from[x*5]   = g32from[x*5]; 
+      g64to[x*5+4] = g64from[x*5+4] = g32from[x*5+4]; 
+    }
+
 
     // for (int iter = 0 ; iter < 1 ; iter++) {
 

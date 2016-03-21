@@ -1,228 +1,83 @@
 
-./gaussian-ave-dev-all32 1 
-./gaussian-ave-dev-all32 2
-./gaussian-ave-dev-all32 3 
-./gaussian-ave-dev-all32 4 
-./gaussian-ave-dev-all32 5 
-./gaussian-ave-dev-all32 6 
-./gaussian-ave-dev-all32 7 
-./gaussian-ave-dev-all32 8 
-./gaussian-ave-dev-all32 9 
-./gaussian-ave-dev-all32 10  
 
-./gaussian-ave-dev-adapt 1 
-./gaussian-ave-dev-adapt 2
-./gaussian-ave-dev-adapt 3 
-./gaussian-ave-dev-adapt 4 
-./gaussian-ave-dev-adapt 5 
-./gaussian-ave-dev-adapt 6 
-./gaussian-ave-dev-adapt 7 
-./gaussian-ave-dev-adapt 8 
-./gaussian-ave-dev-adapt 9 
-./gaussian-ave-dev-adapt 10  
-./gaussian-ave-dev-adapt 11 
-./gaussian-ave-dev-adapt 12
-./gaussian-ave-dev-adapt 13 
-./gaussian-ave-dev-adapt 14 
-./gaussian-ave-dev-adapt 15 
-./gaussian-ave-dev-adapt 16 
-./gaussian-ave-dev-adapt 17 
-./gaussian-ave-dev-adapt 18 
-./gaussian-ave-dev-adapt 19 
-./gaussian-ave-dev-adapt 20  
-./gaussian-ave-dev-adapt 21 
-./gaussian-ave-dev-adapt 22
-./gaussian-ave-dev-adapt 23 
-./gaussian-ave-dev-adapt 24 
-./gaussian-ave-dev-adapt 25 
-./gaussian-ave-dev-adapt 26 
-./gaussian-ave-dev-adapt 27 
-./gaussian-ave-dev-adapt 28 
-./gaussian-ave-dev-adapt 29 
-./gaussian-ave-dev-adapt 30  
-./gaussian-ave-dev-adapt 31 
-./gaussian-ave-dev-adapt 32
-./gaussian-ave-dev-adapt 33 
-./gaussian-ave-dev-adapt 34 
-./gaussian-ave-dev-adapt 35 
-./gaussian-ave-dev-adapt 36 
-./gaussian-ave-dev-adapt 37 
-./gaussian-ave-dev-adapt 38 
-./gaussian-ave-dev-adapt 39 
-./gaussian-ave-dev-adapt 40  
-./gaussian-ave-dev-adapt 41 
-./gaussian-ave-dev-adapt 42
-./gaussian-ave-dev-adapt 43 
-./gaussian-ave-dev-adapt 44 
-./gaussian-ave-dev-adapt 45 
-./gaussian-ave-dev-adapt 46 
-./gaussian-ave-dev-adapt 47 
-./gaussian-ave-dev-adapt 48 
-./gaussian-ave-dev-adapt 49 
-./gaussian-ave-dev-adapt 50  
+./micro-2d-stencil-all32 1 
+./micro-2d-stencil-all32 2
+./micro-2d-stencil-all32 3 
+./micro-2d-stencil-all32 4 
+./micro-2d-stencil-all32 5 
+./micro-2d-stencil-all32 6 
+./micro-2d-stencil-all32 7 
+./micro-2d-stencil-all32 8 
+./micro-2d-stencil-all32 9 
+./micro-2d-stencil-all32 10  
 
-./gaussian-ave-dev-all64 1 
-./gaussian-ave-dev-all64 2
-./gaussian-ave-dev-all64 3 
-./gaussian-ave-dev-all64 4 
-./gaussian-ave-dev-all64 5 
-./gaussian-ave-dev-all64 6 
-./gaussian-ave-dev-all64 7 
-./gaussian-ave-dev-all64 8 
-./gaussian-ave-dev-all64 9 
-./gaussian-ave-dev-all64 10  
+./micro-2d-stencil-mix1 1 
+./micro-2d-stencil-mix1 2
+./micro-2d-stencil-mix1 3 
+./micro-2d-stencil-mix1 4 
+./micro-2d-stencil-mix1 5 
+./micro-2d-stencil-mix1 6 
+./micro-2d-stencil-mix1 7 
+./micro-2d-stencil-mix1 8 
+./micro-2d-stencil-mix1 9 
+./micro-2d-stencil-mix1 10  
+
+./micro-2d-stencil-mix2 1 
+./micro-2d-stencil-mix2 2
+./micro-2d-stencil-mix2 3 
+./micro-2d-stencil-mix2 4 
+./micro-2d-stencil-mix2 5 
+./micro-2d-stencil-mix2 6 
+./micro-2d-stencil-mix2 7 
+./micro-2d-stencil-mix2 8 
+./micro-2d-stencil-mix2 9 
+./micro-2d-stencil-mix2 10  
+
+./micro-2d-stencil-all64 1 
+./micro-2d-stencil-all64 2
+./micro-2d-stencil-all64 3 
+./micro-2d-stencil-all64 4 
+./micro-2d-stencil-all64 5 
+./micro-2d-stencil-all64 6 
+./micro-2d-stencil-all64 7 
+./micro-2d-stencil-all64 8 
+./micro-2d-stencil-all64 9 
+./micro-2d-stencil-all64 10  
 
 
 
 
-
-./gaussian-x-dev-all32 1 
-./gaussian-x-dev-all32 2
-./gaussian-x-dev-all32 3 
-./gaussian-x-dev-all32 4 
-./gaussian-x-dev-all32 5 
-./gaussian-x-dev-all32 6 
-./gaussian-x-dev-all32 7 
-./gaussian-x-dev-all32 8 
-./gaussian-x-dev-all32 9 
-./gaussian-x-dev-all32 10  
-
-./gaussian-x-dev-adapt 1 
-./gaussian-x-dev-adapt 2
-./gaussian-x-dev-adapt 3 
-./gaussian-x-dev-adapt 4 
-./gaussian-x-dev-adapt 5 
-./gaussian-x-dev-adapt 6 
-./gaussian-x-dev-adapt 7 
-./gaussian-x-dev-adapt 8 
-./gaussian-x-dev-adapt 9 
-./gaussian-x-dev-adapt 10  
-./gaussian-x-dev-adapt 11 
-./gaussian-x-dev-adapt 12
-./gaussian-x-dev-adapt 13 
-./gaussian-x-dev-adapt 14 
-./gaussian-x-dev-adapt 15 
-./gaussian-x-dev-adapt 16 
-./gaussian-x-dev-adapt 17 
-./gaussian-x-dev-adapt 18 
-./gaussian-x-dev-adapt 19 
-./gaussian-x-dev-adapt 20  
-./gaussian-x-dev-adapt 21 
-./gaussian-x-dev-adapt 22
-./gaussian-x-dev-adapt 23 
-./gaussian-x-dev-adapt 24 
-./gaussian-x-dev-adapt 25 
-./gaussian-x-dev-adapt 26 
-./gaussian-x-dev-adapt 27 
-./gaussian-x-dev-adapt 28 
-./gaussian-x-dev-adapt 29 
-./gaussian-x-dev-adapt 30  
-./gaussian-x-dev-adapt 31 
-./gaussian-x-dev-adapt 32
-./gaussian-x-dev-adapt 33 
-./gaussian-x-dev-adapt 34 
-./gaussian-x-dev-adapt 35 
-./gaussian-x-dev-adapt 36 
-./gaussian-x-dev-adapt 37 
-./gaussian-x-dev-adapt 38 
-./gaussian-x-dev-adapt 39 
-./gaussian-x-dev-adapt 40  
-./gaussian-x-dev-adapt 41 
-./gaussian-x-dev-adapt 42
-./gaussian-x-dev-adapt 43 
-./gaussian-x-dev-adapt 44 
-./gaussian-x-dev-adapt 45 
-./gaussian-x-dev-adapt 46 
-./gaussian-x-dev-adapt 47 
-./gaussian-x-dev-adapt 48 
-./gaussian-x-dev-adapt 49 
-./gaussian-x-dev-adapt 50  
-
-./gaussian-x-dev-all64 1 
-./gaussian-x-dev-all64 2
-./gaussian-x-dev-all64 3 
-./gaussian-x-dev-all64 4 
-./gaussian-x-dev-all64 5 
-./gaussian-x-dev-all64 6 
-./gaussian-x-dev-all64 7 
-./gaussian-x-dev-all64 8 
-./gaussian-x-dev-all64 9 
-./gaussian-x-dev-all64 10  
+# ./horner-all32 1
+# ./horner-all32 2
+# ./horner-all32 3
+# ./horner-all32 4
+# ./horner-all32 5
+# ./horner-all32 6
+# ./horner-all32 7
+# ./horner-all32 8
+# ./horner-all32 9
+# ./horner-all32 10 
 
 
+# ./horner-adapt 1
+# ./horner-adapt 2
+# ./horner-adapt 3
+# ./horner-adapt 4
+# ./horner-adapt 5
+# ./horner-adapt 6
+# ./horner-adapt 7
+# ./horner-adapt 8
+# ./horner-adapt 9
+# ./horner-adapt 10 
 
 
-
-
-./gaussian-x-ave-all32 1 
-./gaussian-x-ave-all32 2
-./gaussian-x-ave-all32 3 
-./gaussian-x-ave-all32 4 
-./gaussian-x-ave-all32 5 
-./gaussian-x-ave-all32 6 
-./gaussian-x-ave-all32 7 
-./gaussian-x-ave-all32 8 
-./gaussian-x-ave-all32 9 
-./gaussian-x-ave-all32 10  
-
-./gaussian-x-ave-adapt 1 
-./gaussian-x-ave-adapt 2
-./gaussian-x-ave-adapt 3 
-./gaussian-x-ave-adapt 4 
-./gaussian-x-ave-adapt 5 
-./gaussian-x-ave-adapt 6 
-./gaussian-x-ave-adapt 7 
-./gaussian-x-ave-adapt 8 
-./gaussian-x-ave-adapt 9 
-./gaussian-x-ave-adapt 10  
-./gaussian-x-ave-adapt 11 
-./gaussian-x-ave-adapt 12
-./gaussian-x-ave-adapt 13 
-./gaussian-x-ave-adapt 14 
-./gaussian-x-ave-adapt 15 
-./gaussian-x-ave-adapt 16 
-./gaussian-x-ave-adapt 17 
-./gaussian-x-ave-adapt 18 
-./gaussian-x-ave-adapt 19 
-./gaussian-x-ave-adapt 20  
-./gaussian-x-ave-adapt 21 
-./gaussian-x-ave-adapt 22
-./gaussian-x-ave-adapt 23 
-./gaussian-x-ave-adapt 24 
-./gaussian-x-ave-adapt 25 
-./gaussian-x-ave-adapt 26 
-./gaussian-x-ave-adapt 27 
-./gaussian-x-ave-adapt 28 
-./gaussian-x-ave-adapt 29 
-./gaussian-x-ave-adapt 30  
-./gaussian-x-ave-adapt 31 
-./gaussian-x-ave-adapt 32
-./gaussian-x-ave-adapt 33 
-./gaussian-x-ave-adapt 34 
-./gaussian-x-ave-adapt 35 
-./gaussian-x-ave-adapt 36 
-./gaussian-x-ave-adapt 37 
-./gaussian-x-ave-adapt 38 
-./gaussian-x-ave-adapt 39 
-./gaussian-x-ave-adapt 40  
-./gaussian-x-ave-adapt 41 
-./gaussian-x-ave-adapt 42
-./gaussian-x-ave-adapt 43 
-./gaussian-x-ave-adapt 44 
-./gaussian-x-ave-adapt 45 
-./gaussian-x-ave-adapt 46 
-./gaussian-x-ave-adapt 47 
-./gaussian-x-ave-adapt 48 
-./gaussian-x-ave-adapt 49 
-./gaussian-x-ave-adapt 50  
-
-./gaussian-x-ave-all64 1 
-./gaussian-x-ave-all64 2
-./gaussian-x-ave-all64 3 
-./gaussian-x-ave-all64 4 
-./gaussian-x-ave-all64 5 
-./gaussian-x-ave-all64 6 
-./gaussian-x-ave-all64 7 
-./gaussian-x-ave-all64 8 
-./gaussian-x-ave-all64 9 
-./gaussian-x-ave-all64 10  
+# ./horner-all64 1
+# ./horner-all64 2
+# ./horner-all64 3
+# ./horner-all64 4
+# ./horner-all64 5
+# ./horner-all64 6
+# ./horner-all64 7
+# ./horner-all64 8
+# ./horner-all64 9
+# ./horner-all64 10 
