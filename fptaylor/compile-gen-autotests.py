@@ -4,7 +4,9 @@ import os
 import sys
 
 
-BENCHS = ["sine", "sqroot", "predatorPrey", "rigidBody-1", "turbine-1", "turbine-2", "turbine-3", "carbonGas", "jet"] 
+# BENCHS = ["sine", "sqroot", "predatorPrey", "rigidBody-1", "turbine-1", "turbine-2", "turbine-3", "carbonGas", "jet"] 
+
+BENCHS = ["sine", "jet"] 
 
 CXX = "arm-linux-gnueabihf-g++ -O0 -mfpu=neon " 
 

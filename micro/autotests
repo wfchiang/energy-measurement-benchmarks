@@ -1,5 +1,84 @@
 
 
+./horner-all32 1
+./horner-all32 2
+./horner-all32 3
+./horner-all32 4
+./horner-all32 5
+./horner-all32 6
+./horner-all32 7
+./horner-all32 8
+./horner-all32 9
+./horner-all32 10 
+
+
+./horner-adapt 1
+./horner-adapt 2
+./horner-adapt 3
+./horner-adapt 4
+./horner-adapt 5
+./horner-adapt 6
+./horner-adapt 7
+./horner-adapt 8
+./horner-adapt 9
+./horner-adapt 10 
+./horner-adapt 11
+./horner-adapt 12
+./horner-adapt 13
+./horner-adapt 14
+./horner-adapt 15
+./horner-adapt 16
+./horner-adapt 17
+./horner-adapt 18
+./horner-adapt 19
+./horner-adapt 20 
+./horner-adapt 21
+./horner-adapt 22
+./horner-adapt 23
+./horner-adapt 24
+./horner-adapt 25
+./horner-adapt 26
+./horner-adapt 27
+./horner-adapt 28
+./horner-adapt 29
+./horner-adapt 30 
+./horner-adapt 31
+./horner-adapt 32
+./horner-adapt 33
+./horner-adapt 34
+./horner-adapt 35
+./horner-adapt 36
+./horner-adapt 37
+./horner-adapt 38
+./horner-adapt 39
+./horner-adapt 40 
+./horner-adapt 41
+./horner-adapt 42
+./horner-adapt 43
+./horner-adapt 44
+./horner-adapt 45
+./horner-adapt 46
+./horner-adapt 47
+./horner-adapt 48
+./horner-adapt 49
+./horner-adapt 50 
+
+
+./horner-all64 1
+./horner-all64 2
+./horner-all64 3
+./horner-all64 4
+./horner-all64 5
+./horner-all64 6
+./horner-all64 7
+./horner-all64 8
+./horner-all64 9
+./horner-all64 10 
+
+
+
+
+
 ./micro-2d-stencil-all32 1 
 ./micro-2d-stencil-all32 2
 ./micro-2d-stencil-all32 3 
@@ -44,40 +123,3 @@
 ./micro-2d-stencil-all64 9 
 ./micro-2d-stencil-all64 10  
 
-
-
-
-# ./horner-all32 1
-# ./horner-all32 2
-# ./horner-all32 3
-# ./horner-all32 4
-# ./horner-all32 5
-# ./horner-all32 6
-# ./horner-all32 7
-# ./horner-all32 8
-# ./horner-all32 9
-# ./horner-all32 10 
-
-
-# ./horner-adapt 1
-# ./horner-adapt 2
-# ./horner-adapt 3
-# ./horner-adapt 4
-# ./horner-adapt 5
-# ./horner-adapt 6
-# ./horner-adapt 7
-# ./horner-adapt 8
-# ./horner-adapt 9
-# ./horner-adapt 10 
-
-
-# ./horner-all64 1
-# ./horner-all64 2
-# ./horner-all64 3
-# ./horner-all64 4
-# ./horner-all64 5
-# ./horner-all64 6
-# ./horner-all64 7
-# ./horner-all64 8
-# ./horner-all64 9
-# ./horner-all64 10 

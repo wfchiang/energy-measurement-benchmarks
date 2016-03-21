@@ -4,7 +4,7 @@ CXX=arm-linux-gnueabihf-g++
 CXXFLAGS=-O0 -mfpu=neon -D__USE_MEMCPY 
 
 
-all: horner micro-2d-stencil 
+all: horner 
 
 
 bal-reduction: bal-reduction-all-32 bal-reduction-mix bal-reduction-all-64 

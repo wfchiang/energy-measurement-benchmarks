@@ -16,14 +16,16 @@ using namespace std;
 int main (int argc, char **argv) {
   srand(time(NULL));
 
+  float  coeff32[10]; 
+  float  x32; 
   double coeff64[10]; 
   double x64; 
 
   for (int i = 0 ; i < 10 ; i++) {
-    coeff64[i] = randFP64(-1.0, 1.0); 
+    coeff32[i] = coeff64[i] = randFP64(-1.0, 1.0); 
   }
 
-  x64 = randFP64(-1.0, 1.0); 
+  x32 = x64 = randFP64(-1.0, 1.0); 
 
 
   // start energy measurement here 
@@ -36,20 +38,19 @@ int main (int argc, char **argv) {
   for (int r = 0 ; r < N_REPEATS ; r++) {
 
     // predict 
-    if ((x64 > 0.8) || (x64 <= -0.8)) {
-      goto Horner64; 
+    if (x64 <= 0.8) {
+      if (x64 > -0.8) 
+	goto Horner32;
+      else goto Horner64; 
     }
-    else{
-      goto Horner32; 
-    }
+    else goto Horner64; 
 
   Horner32:
     {
-      float x32 = x64; 
-      float rel32 = coeff64[0];     
-      
+      float rel32 = coeff32[0]; 
+
       for (int i = 1 ; i < 10 ; i++) {
-	rel32 = (rel32 * x32) + (float)coeff64[i]; 
+	rel32 = (rel32 * x32) + coeff32[i]; 
       }
       
       goto JoinPoint; 
