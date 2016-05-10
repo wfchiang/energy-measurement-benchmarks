@@ -16,10 +16,10 @@ The benchmarks (and their versions) are listed as follows.
 - **fptaylor -- sine**
 
   It is located at **./fptaylor/sine**, and it has four versions. 
-  * **all-64**: located at ./fptaylor/sine/all-64 
+  * **all-32**: located at ./fptaylor/sine/all-32 
   * **Err threshold = 4e-07**: located at ./fptaylor/sine/4e-07
   * **Err threshold = 2e-07**: located at ./fptaylor/sine/2e-07
-  * **all-128** : located at ./fptaylor/sine/all-128  
+  * **all-64** : located at ./fptaylor/sine/all-64
 
   **variable range** 
   * **x** : [ -1.57079632679, 1.57079632679] 
@@ -29,11 +29,11 @@ The benchmarks (and their versions) are listed as follows.
 
   It is located at **./fptaylor/jet**, and it has five versions. 
 
-  * **all-64**: located at ./fptaylor/jet/all-64 
+  * **all-32**: located at ./fptaylor/jet/all-32 
   * **Err threshold = 1e-02**: located at ./fptaylor/jet/1e-02 
   * **Err threshold = 7.5e-03**: located at ./fptaylor/jet/7.5e-03 
   * **Err threshold = 5e-03**: located at ./fptaylor/jet/5e-03 
-  * **all-128** : located at ./fptaylor/sine/all-128  
+  * **all-64** : located at ./fptaylor/sine/all-64 
 
   **variable ranges**
   * **x1** : [-5.0, 5.0] 
@@ -44,3 +44,5 @@ The benchmarks (and their versions) are listed as follows.
 NOTE: 
 
 - For all benchmarks, variables named with prefix "__const_" serve as constants. 
+
+- Directory ./fptaylor/archive stores the old benchmarks... 
