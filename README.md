@@ -46,3 +46,8 @@ NOTE:
 - For all benchmarks, variables named with prefix "__const_" serve as constants. 
 
 - Directory ./fptaylor/archive stores the old benchmarks... 
+
+
+Thanks a lots for the help! 
+
+Wei-Fan 
