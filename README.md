@@ -4,7 +4,9 @@
 To Ian and Mark, 
 
 Please check the energy consumption for the benchmarks and their different versions. 
-For each version, I had created 100 programs which apply different inputs. 
+
+For each version of each benchmark under **fptaylor** directory, 
+I had created 100 programs which apply different inputs. 
 However, feel free to insert your code for generating random inputs. 
 The range for each input variable will be specified later. 
 Hope that you don't need to work on the code too much in order to insert you energy profiling code... 
@@ -38,6 +40,15 @@ The benchmarks (and their versions) are listed as follows.
   **variable ranges**
   * **x1** : [-5.0, 5.0] 
   * **x2** : [-20.0, 5.0] 
+
+
+- **gaussian -- fixed x** 
+
+  It is located at **./gaussian**, and it has three versions. 
+
+  * **all-32**: file ./gaussian/gaussian-fixed-x-all-32.cpp 
+  * **adaptive**: file ./gaussian/gaussian-fxied-x-adaptive.cpp 
+  * **all-64**: file ./gaussian/gaussian-fixed-x-all-64.cpp 
   
 
 
