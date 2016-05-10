@@ -42,13 +42,19 @@ The benchmarks (and their versions) are listed as follows.
   * **x2** : [-20.0, 5.0] 
 
 
-- **gaussian -- fixed x** 
+- **gaussian -- fixed x**
+
+  SORRY, THIS BENCHMARK IS NOT READY YET...  
 
   It is located at **./gaussian**, and it has three versions. 
 
   * **all-32**: file ./gaussian/gaussian-fixed-x-all-32.cpp 
   * **adaptive**: file ./gaussian/gaussian-fxied-x-adaptive.cpp 
   * **all-64**: file ./gaussian/gaussian-fixed-x-all-64.cpp 
+
+  **variable ranges** 
+  * **ave** : [-1.0, 1.0] 
+  * **dev** : [1.0, 3.0] 
   
 
 
