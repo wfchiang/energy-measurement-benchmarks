@@ -12,20 +12,20 @@ Hope that you don't need to work on the code too much in order to insert you ene
 
 The benchmarks (and their versions) are listed as follows. 
 
-* **fptaylor -- sine**
+- **fptaylor -- sine**
   It is located at **./fptaylor/sine**, and it has four versions. 
-  ** **all-64**: located at ./fptaylor/sine/all-64 
-  ** **Err threshold = 4e-07**: located at ./fptaylor/sine/4e-07
-  ** **Err threshold = 2e-07**: located at ./fptaylor/sine/2e-07
-  ** **all-128** : located at ./fptaylor/sine/all-128  
+  * **all-64**: located at ./fptaylor/sine/all-64 
+  * **Err threshold = 4e-07**: located at ./fptaylor/sine/4e-07
+  * **Err threshold = 2e-07**: located at ./fptaylor/sine/2e-07
+  * **all-128** : located at ./fptaylor/sine/all-128  
 
   **variable range** 
-  ** **x** : [ -1.57079632679, 1.57079632679] 
+  * **x** : [ -1.57079632679, 1.57079632679] 
 
-* **fptaylor -- jet** 
+- **fptaylor -- jet** 
   It is located at **./fptaylor/jet**, and it has five versions. 
   
 
 NOTE: 
 
-* For all benchmarks, variables named with prefix "__const_" serve as constants. 
+- For all benchmarks, variables named with prefix "__const_" serve as constants. 
