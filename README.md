@@ -52,6 +52,19 @@ The benchmarks (and their versions) are listed as follows.
 
   **variable ranges** 
   * **ave** : [-1.0, 1.0] 
+  * **dev** : [1.0, 3.0]
+
+
+- **gaussian -- fixed ave**
+
+  It is located at **./gaussian**, and it has three versions.
+
+  * **all-32**: file ./gaussian/gaussian-fixed-ave-all-32.cpp
+  * **adaptive**: file ./gaussian/gaussian-fixed-ave-adaptive.cpp
+  * **all-64**: file ./gaussian/gaussian-fixed-ave-all-64.cpp
+
+  **variable ranges**
+  * **x** : [-10.0, 10.0]
   * **dev** : [1.0, 3.0] 
   
 
