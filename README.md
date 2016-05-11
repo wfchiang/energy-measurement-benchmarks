@@ -44,8 +44,6 @@ The benchmarks (and their versions) are listed as follows.
 
 - **gaussian -- fixed x**
 
-  SORRY, THIS BENCHMARK IS NOT READY YET...  
-
   It is located at **./gaussian**, and it has three versions. 
 
   * **all-32**: file ./gaussian/gaussian-fixed-x-all-32.cpp 
