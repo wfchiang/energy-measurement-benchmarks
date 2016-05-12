@@ -1,81 +1,129 @@
 # energy-measurement-benchmarks
 
 
-To Ian and Mark, 
 
-Please check the energy consumption for the benchmarks and their different versions. 
+## fptaylor -- sine
 
-For each version of each benchmark under **fptaylor** directory, 
-I had created 100 programs which apply different inputs. 
-However, feel free to insert your code for generating random inputs. 
-The range for each input variable will be specified later. 
-Hope that you don't need to work on the code too much in order to insert you energy profiling code... 
+It is located at **./fptaylor/sine**, and it has four versions. 
 
+- **all-32**: located at ./fptaylor/sine/all-32 
+- **error threshold = 4e-07**: located at ./fptaylor/sine/4e-07
+- **error threshold = 2e-07**: located at ./fptaylor/sine/2e-07
+- **all-64** : located at ./fptaylor/sine/all-64
 
+For each version, I had created 100 programs which take different inputs. 
+But feel free to modify the code to generate random inputs at runtime. 
 
-The benchmarks (and their versions) are listed as follows. 
+**variable range** 
 
-- **fptaylor -- sine**
-
-  It is located at **./fptaylor/sine**, and it has four versions. 
-  * **all-32**: located at ./fptaylor/sine/all-32 
-  * **Err threshold = 4e-07**: located at ./fptaylor/sine/4e-07
-  * **Err threshold = 2e-07**: located at ./fptaylor/sine/2e-07
-  * **all-64** : located at ./fptaylor/sine/all-64
-
-  **variable range** 
-  * **x** : [ -1.57079632679, 1.57079632679] 
+- **x** : [ -1.57079632679, 1.57079632679] 
 
 
-- **fptaylor -- jet** 
 
-  It is located at **./fptaylor/jet**, and it has five versions. 
+## fptaylor -- jet 
 
-  * **all-32**: located at ./fptaylor/jet/all-32 
-  * **Err threshold = 1e-02**: located at ./fptaylor/jet/1e-02 
-  * **Err threshold = 7.5e-03**: located at ./fptaylor/jet/7.5e-03 
-  * **Err threshold = 5e-03**: located at ./fptaylor/jet/5e-03 
-  * **all-64** : located at ./fptaylor/sine/all-64 
+It is located at **./fptaylor/jet**, and it has five versions. 
 
-  **variable ranges**
-  * **x1** : [-5.0, 5.0] 
-  * **x2** : [-20.0, 5.0] 
+- **all-32**: located at ./fptaylor/jet/all-32 
+- **err threshold = 1e-02**: located at ./fptaylor/jet/1e-02 
+- **err threshold = 7.5e-03**: located at ./fptaylor/jet/7.5e-03 
+- **err threshold = 5e-03**: located at ./fptaylor/jet/5e-03 
+- **all-64** : located at ./fptaylor/sine/all-64 
 
+For each version, I had created 100 programs which take different inputs. 
+But feel free to modify the code to generate random inputs at runtime. 
 
-- **gaussian -- fixed x**
+**variable ranges**
 
-  It is located at **./gaussian**, and it has three versions. 
-
-  * **all-32**: file ./gaussian/gaussian-fixed-x-all-32.cpp 
-  * **adaptive**: file ./gaussian/gaussian-fxied-x-adaptive.cpp 
-  * **all-64**: file ./gaussian/gaussian-fixed-x-all-64.cpp 
-
-  **variable ranges** 
-  * **ave** : [-1.0, 1.0] 
-  * **dev** : [1.0, 3.0]
+- **x1** : [-5.0, 5.0] 
+- **x2** : [-20.0, 5.0] 
 
 
-- **gaussian -- fixed ave**
 
-  It is located at **./gaussian**, and it has three versions.
+## gaussian -- fixed x
 
-  * **all-32**: file ./gaussian/gaussian-fixed-ave-all-32.cpp
-  * **adaptive**: file ./gaussian/gaussian-fixed-ave-adaptive.cpp
-  * **all-64**: file ./gaussian/gaussian-fixed-ave-all-64.cpp
+It is located at **./gaussian**, and it has three versions. 
 
-  **variable ranges**
-  * **x** : [-10.0, 10.0]
-  * **dev** : [1.0, 3.0] 
+- **all-32**: file ./gaussian/gaussian-fixed-x-all-32.cpp 
+- **adaptive**: file ./gaussian/gaussian-fxied-x-adaptive.cpp 
+- **all-64**: file ./gaussian/gaussian-fixed-x-all-64.cpp 
+
+I would suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
+By using command 
+
+'''
+python input-generator.py
+'''
+
+A CSV file **inputs-fixed-x.csv** will be created which contains the assignments to x, ave and dev (x is fixed to 0.0). 
+
+**variable ranges** 
+  
+- **ave** : [-1.0, 1.0] 
+- **dev** : [1.0, 3.0]
+
+
+
+## gaussian -- fixed ave 
+
+It is located at **./gaussian**, and it has three versions.
+
+- **all-32**: file ./gaussian/gaussian-fixed-ave-all-32.cpp
+- **adaptive**: file ./gaussian/gaussian-fixed-ave-adaptive.cpp
+- **all-64**: file ./gaussian/gaussian-fixed-ave-all-64.cpp
+
+I would **strongly** suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
+The reason is that the distribution of x depends on ave and dev. 
+By using command 
+
+'''
+python input-generator.py
+'''
+
+A CSV file **inputs-fixed-ave.csv** will be created which contains the assignments to x, ave and dev (ave is fixed to 0.0). 
+
+**variable ranges**
+
+- **x** : [-10.0, 10.0]
+- **dev** : [1.0, 3.0] 
+
+
+
+## gaussian -- fixed dev 
+
+It is located at **./gaussian**, and it has three versions.
+
+- **all-32**: file ./gaussian/gaussian-fixed-dev-all-32.cpp
+- **adaptive**: file ./gaussian/gaussian-fixed-dev-adaptive.cpp
+- **all-64**: file ./gaussian/gaussian-fixed-dev-all-64.cpp
+
+I would **strongly** suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
+The reason is that the distribution of x depends on ave and dev. 
+By using command 
+
+'''
+python input-generator.py
+'''
+
+A CSV file **inputs-fixed-dev.csv** will be created which contains the assignments to x, ave and dev (dev is fixed to 1.0). 
+
+**variable ranges**
+
+- **x** : [-10.0, 10.0]
+- **ave** : [-1.0, 1.0] 
+
+
+
+## horner 
+
+The benchmarks are coming... 
   
 
 
-NOTE: 
+## NOTE 
 
 - For all benchmarks, variables named with prefix "__const_" serve as constants. 
 
 - Directory ./fptaylor/archive stores the old benchmarks... 
 
 
-Thanks a lots for the help! 
-
-Wei-Fan 
