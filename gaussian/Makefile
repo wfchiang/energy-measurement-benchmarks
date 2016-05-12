@@ -1,6 +1,6 @@
 
 CC=g++
-all: gaussian-fixed-x-all-32 gaussian-fixed-x-adaptive gaussian-fixed-x-all-64 
+all: gaussian-fixed-x-all-32 gaussian-fixed-x-adaptive gaussian-fixed-x-all-64 gaussian-fixed-ave-all-32 gaussian-fixed-ave-adaptive gaussian-fixed-ave-all-64 
 
 
 gaussian-fixed-x-all-32: gaussian-fixed-x-all-32.cpp 

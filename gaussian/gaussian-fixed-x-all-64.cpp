@@ -5,6 +5,7 @@
 using namespace std;
 
 int main (int argc, char **argv) {
+  srand(time(NULL));
   
   double ave = randFP32(-1.0, 1.0); 
   double dev = randFP32(1.0, 3.0); 
