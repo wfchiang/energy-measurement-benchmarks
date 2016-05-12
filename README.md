@@ -51,9 +51,9 @@ It is located at **./gaussian**, and it has three versions.
 I would suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
 By using command 
 
-'''
+```
 python input-generator.py
-'''
+```
 
 A CSV file **inputs-fixed-x.csv** will be created which contains the assignments to x, ave and dev (x is fixed to 0.0). 
 
@@ -76,9 +76,9 @@ I would **strongly** suggest using the input generation script **input-generator
 The reason is that the distribution of x depends on ave and dev. 
 By using command 
 
-'''
+```
 python input-generator.py
-'''
+```
 
 A CSV file **inputs-fixed-ave.csv** will be created which contains the assignments to x, ave and dev (ave is fixed to 0.0). 
 
@@ -101,9 +101,9 @@ I would **strongly** suggest using the input generation script **input-generator
 The reason is that the distribution of x depends on ave and dev. 
 By using command 
 
-'''
+```
 python input-generator.py
-'''
+```
 
 A CSV file **inputs-fixed-dev.csv** will be created which contains the assignments to x, ave and dev (dev is fixed to 1.0). 
 
