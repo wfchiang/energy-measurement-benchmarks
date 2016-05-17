@@ -1,6 +1,6 @@
 
 CC=g++
-all: gaussian-fixed-x-all-32 gaussian-fixed-x-adaptive gaussian-fixed-x-all-64 gaussian-fixed-ave-all-32 gaussian-fixed-ave-adaptive gaussian-fixed-ave-all-64 gaussian-fixed-dev-all-32 gaussian-fixed-dev-adaptive gaussian-fixed-dev-all-64 
+all: gaussian-fixed-x-all-32 gaussian-fixed-x-adaptive gaussian-fixed-x-all-64 gaussian-fixed-ave-all-32 gaussian-fixed-ave-adaptive gaussian-fixed-ave-all-64 gaussian-fixed-dev-all-32 gaussian-fixed-dev-adaptive gaussian-fixed-dev-all-64 gaussian-allvars-all-32 gaussian-allvars-adaptive gaussian-allvars-all-64 
 
 
 gaussian-fixed-x-all-32: gaussian-fixed-x-all-32.cpp 
@@ -31,6 +31,17 @@ gaussian-fixed-dev-adaptive: gaussian-fixed-dev-adaptive.cpp
 
 gaussian-fixed-dev-all-64: gaussian-fixed-dev-all-64.cpp 
 	$(CC) -I../include -O0 -o gaussian-fixed-dev-all-64 gaussian-fixed-dev-all-64.cpp 
+
+
+gaussian-allvars-all-32: gaussian-allvars-all-32.cpp 
+	$(CC) -I../include -O0 -o gaussian-allvars-all-32 gaussian-allvars-all-32.cpp 
+
+gaussian-allvars-adaptive: gaussian-allvars-adaptive.cpp 
+	$(CC) -I../include -O0 -o gaussian-allvars-adaptive gaussian-allvars-adaptive.cpp 
+
+gaussian-allvars-all-64: gaussian-allvars-all-64.cpp 
+	$(CC) -I../include -O0 -o gaussian-allvars-all-64 gaussian-allvars-all-64.cpp 
+
 
 
 clean: 
