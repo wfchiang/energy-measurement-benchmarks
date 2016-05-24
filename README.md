@@ -116,7 +116,22 @@ A CSV file **inputs-fixed-dev.csv** will be created which contains the assignmen
 
 ## horner 
 
-The benchmarks are coming... 
+There are totally four versions of this benchmarks and they are located at **./horner**. 
+
+- **all-32** : file horner-all-32.cpp 
+- **adaptive-1e-05** : file adaptive-1e-05.cpp 
+- **adaptive-1e-06** : file adaptive-1e-06.cpp 
+- **all-64** : file horner-all-64.cpp 
+
+
+
+## balanced-reduction 
+
+There are totally three versions of this benchmarks and they are located at **./balanced-reduction**. 
+
+- **all-32** : file bal-reduction-all-32.cpp  
+- **mixed** : file bal-reduction-mixed.cpp 
+- **all-64** : file bal-reduction-all-64.cpp 
   
 
 
