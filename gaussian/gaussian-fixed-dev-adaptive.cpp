@@ -14,9 +14,6 @@ int main (int argc, char **argv) {
   double x64 = x; 
   double ave64 = ave; 
 
-  double x64 = x; 
-  double ave64 = ave; 
-
   double __const_6 = -1.0;
   double __const_5 = 2.0;
   double __const_4 = 1.0;

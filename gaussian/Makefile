@@ -59,4 +59,7 @@ clean:
 	-rm gaussian-fixed-dev-adaptive 
 	-rm gaussian-fixed-dev-all-64 
 
+	-rm gaussian-allvars-all-32
+	-rm gaussian-allvars-adaptive
+	-rm gaussian-allvars-all-64
 
