@@ -99,7 +99,7 @@ A CSV file **inputs-fixed-ave.csv** will be created which contains the assignmen
 
 ## gaussian -- fixed dev 
 
-It is located at **./gaussian**, and it has three versions.
+It is located at **./gaussian**, and it has seven versions.
 
 - **all-32**: file ./gaussian/gaussian-fixed-dev-all-32.cpp
 - **adaptive**: file ./gaussian/gaussian-fixed-dev-adaptive.cpp
@@ -123,6 +123,36 @@ A CSV file **inputs-fixed-dev.csv** will be created which contains the assignmen
 
 - **x** : [-10.0, 10.0]
 - **ave** : [-1.0, 1.0] 
+
+
+
+## gaussian -- all variables 
+
+It is located at **./gaussian**, and it has seven versions.
+
+- **all-32**: file ./gaussian/gaussian-allvars-all-32.cpp
+- **adaptive**: file ./gaussian/gaussian-allvars-adaptive.cpp
+- **all-64**: file ./gaussian/gaussian-allvars-all-64.cpp
+- **error threshold = 5e-07**: file ./gaussian/math-gaussian-allvars-5e-07.cpp 
+- **error threshold = 1e-07**: file ./gaussian/math-gaussian-allvars-1e-07.cpp 
+- **error threshold = 5e-08**: file ./gaussian/math-gaussian-allvars-5e-08.cpp 
+- **error threshold = 1e-22**: file ./gaussian/math-gaussian-allvars-1e-22.cpp 
+
+I would **strongly** suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
+The reason is that the distribution of x depends on ave and dev. 
+By using command 
+
+```
+python input-generator.py
+```
+
+A CSV file **inputs-allvars.csv** will be created which contains the assignments to x, ave and dev. 
+
+**variable ranges**
+
+- **x** : [-10.0, 10.0]
+- **ave** : [-1.0, 1.0] 
+- **dev** : [1.0, 3.0] 
 
 
 
