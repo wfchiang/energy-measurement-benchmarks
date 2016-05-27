@@ -42,11 +42,15 @@ But feel free to modify the code to generate random inputs at runtime.
 
 ## gaussian -- fixed x
 
-It is located at **./gaussian**, and it has three versions. 
+It is located at **./gaussian**, and it has seven versions. 
 
 - **all-32**: file ./gaussian/gaussian-fixed-x-all-32.cpp 
 - **adaptive**: file ./gaussian/gaussian-fxied-x-adaptive.cpp 
 - **all-64**: file ./gaussian/gaussian-fixed-x-all-64.cpp 
+- **error threshold = 5e-07**: file ./gaussian/math-gaussian-fixed-x-5e-07.cpp 
+- **error threshold = 1e-07**: file ./gaussian/math-gaussian-fixed-x-1e-07.cpp 
+- **error threshold = 5e-08**: file ./gaussian/math-gaussian-fixed-x-5e-08.cpp 
+- **error threshold = 1e-22**: file ./gaussian/math-gaussian-fixed-x-1e-22.cpp 
 
 I would suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
 By using command 
@@ -66,11 +70,15 @@ A CSV file **inputs-fixed-x.csv** will be created which contains the assignments
 
 ## gaussian -- fixed ave 
 
-It is located at **./gaussian**, and it has three versions.
+It is located at **./gaussian**, and it has seven versions.
 
 - **all-32**: file ./gaussian/gaussian-fixed-ave-all-32.cpp
 - **adaptive**: file ./gaussian/gaussian-fixed-ave-adaptive.cpp
 - **all-64**: file ./gaussian/gaussian-fixed-ave-all-64.cpp
+- **error threshold = 5e-07**: file ./gaussian/math-gaussian-fixed-ave-5e-07.cpp 
+- **error threshold = 1e-07**: file ./gaussian/math-gaussian-fixed-ave-1e-07.cpp 
+- **error threshold = 5e-08**: file ./gaussian/math-gaussian-fixed-ave-5e-08.cpp 
+- **error threshold = 1e-22**: file ./gaussian/math-gaussian-fixed-ave-1e-22.cpp 
 
 I would **strongly** suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
 The reason is that the distribution of x depends on ave and dev. 
@@ -96,6 +104,10 @@ It is located at **./gaussian**, and it has three versions.
 - **all-32**: file ./gaussian/gaussian-fixed-dev-all-32.cpp
 - **adaptive**: file ./gaussian/gaussian-fixed-dev-adaptive.cpp
 - **all-64**: file ./gaussian/gaussian-fixed-dev-all-64.cpp
+- **error threshold = 5e-07**: file ./gaussian/math-gaussian-fixed-dev-5e-07.cpp 
+- **error threshold = 1e-07**: file ./gaussian/math-gaussian-fixed-dev-1e-07.cpp 
+- **error threshold = 5e-08**: file ./gaussian/math-gaussian-fixed-dev-5e-08.cpp 
+- **error threshold = 1e-22**: file ./gaussian/math-gaussian-fixed-dev-1e-22.cpp 
 
 I would **strongly** suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
 The reason is that the distribution of x depends on ave and dev. 
