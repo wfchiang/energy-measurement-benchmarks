@@ -24,54 +24,73 @@ int main (int argc, char **argv) {
 
 
   for (int ii = 0 ; ii < 100000000 ; ii++) {
-    
-    if (dev <= 2.2) {
-      if (x <= 4.0) {
-	if (x <= -4.0) {
+
+    if (x <= -6.0) {
+      if (ave <= -0.8) { 
+	if (dev <= 2.4) { 
 	  goto MIX2; 
 	}
-	else { // x > -4.0 
-	  if (dev <= 1.8) {
+	else { // dev > 2.4 
+	  if (x <= -8.0) {
+	    goto MIX2; 
+	  }
+	  else { // x > -8.0 
 	    goto MIX1; 
 	  }
-	  else { // dev > 1.8 
-	    goto MIX3; 
-	  }
-	} 
-      }
-      else { // x > 4.0 
-	if (ave <= 0.6) {
-	  goto MIX2; 
 	}
-	else { // ave > 0.6
-	  if (x <= 6.0) {
+      }
+      else { // ave > -0.8 
+	goto MIX2; 
+      } 
+    }
+    else { // x > -6.0 
+      if (x <= 4.0) { 
+	if (x <= -4.0) {
+	  if (ave <= 0.2) {
 	    goto MIX0; 
 	  }
-	  else { // x > 6.0 
+	  else { // ave > 0.2 
 	    goto MIX2; 
 	  }
 	}
+	else { // x > -4.0 
+	  if (dev <= 2.2) {
+	    goto MIX0; 
+	  }
+	  else { // dev > 2.2 
+	    goto MIX1; 
+	  } 
+	}
       }
+      else { // x > 4.0
+	if (x <= 6.0) {
+	  if (ave <= -0.2) {
+	    goto MIX2; 
+	  }
+	  else { // ave > -0.2 
+	    goto MIX3; 
+	  } 
+	}
+	else { // x > 6.0 
+	  goto MIX2; 
+	}
+      } 
     }
-    else { // dev > 2.2 
-      goto MIX2; 
-    }
-
 
   MIX0:
-    rel64 = ((double)((float)__const_4 / (float)(dev64 * __const_3)) * (double)(exp2f((float)(__const_6 * (((x64 - ave64) * (x64 - ave64)) / (__const_5 * (dev64 * dev64)))))));
+    rel64 = ((__const_4 / (dev64 * __const_3)) * (double)(exp2f((float)(__const_6 * (((x64 - ave64) * (x64 - ave64)) / (__const_5 * (dev64 * dev64)))))));
     goto JoinPoint; 
 
   MIX1:
-    rel64 = ((__const_4 / (dev64 * __const_3)) * (exp2((double)((float)__const_6 * ((float)((x64 - ave64) * (x64 - ave64)) / (float)(__const_5 * (dev64 * dev64)))))));
+    rel64 = ((__const_4 / (dev64 * __const_3)) * (double)(exp2f(((float)__const_6 * ((float)((x64 - ave64) * (x64 - ave64)) / (float)(__const_5 * (dev64 * dev64)))))));
     goto JoinPoint; 
 
   MIX2:
-    rel64 = ((__const_4 / ((double)dev * __const_3)) * (exp2((double)((float)__const_6 * (((x - ave) * (x - ave)) / (float)(__const_5 * ((double)dev * (double)dev)))))));
+    rel64 = ((double)((float)__const_4 / ((float)dev * (float)__const_3)) * (double)(exp2f((float)(__const_6 * (((x64 - ave64) * (x64 - ave64)) / (__const_5 * (dev64 * dev64)))))));
     goto JoinPoint; 
 
   MIX3:
-    rel64 = ((__const_4 / (dev64 * __const_3)) * (double)(exp2f(((float)__const_6 * (((float)(x64 - ave64) * (float)(x64 - ave64)) / ((float)__const_5 * ((float)dev64 * (float)dev64)))))));
+    rel32 = (((float)__const_4 / (float)(dev64 * __const_3)) * (exp2f(((float)__const_6 * (((float)(x64 - ave64) * (float)(x64 - ave64)) / (float)(__const_5 * (dev64 * dev64)))))));
     goto JoinPoint; 
 
   JoinPoint:
