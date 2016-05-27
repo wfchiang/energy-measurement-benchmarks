@@ -52,15 +52,6 @@ It is located at **./gaussian**, and it has seven versions.
 - **error threshold = 5e-08**: file ./gaussian/math-gaussian-fixed-x-5e-08.cpp 
 - **error threshold = 1e-22**: file ./gaussian/math-gaussian-fixed-x-1e-22.cpp 
 
-I would suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
-By using command 
-
-```
-python input-generator.py
-```
-
-A CSV file **inputs-fixed-x.csv** will be created which contains the assignments to x, ave and dev (x is fixed to 0.0). 
-
 **variable ranges** 
   
 - **ave** : [-1.0, 1.0] 
@@ -79,16 +70,6 @@ It is located at **./gaussian**, and it has seven versions.
 - **error threshold = 1e-07**: file ./gaussian/math-gaussian-fixed-ave-1e-07.cpp 
 - **error threshold = 5e-08**: file ./gaussian/math-gaussian-fixed-ave-5e-08.cpp 
 - **error threshold = 1e-22**: file ./gaussian/math-gaussian-fixed-ave-1e-22.cpp 
-
-I would **strongly** suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
-The reason is that the distribution of x depends on ave and dev. 
-By using command 
-
-```
-python input-generator.py
-```
-
-A CSV file **inputs-fixed-ave.csv** will be created which contains the assignments to x, ave and dev (ave is fixed to 0.0). 
 
 **variable ranges**
 
@@ -109,16 +90,6 @@ It is located at **./gaussian**, and it has seven versions.
 - **error threshold = 5e-08**: file ./gaussian/math-gaussian-fixed-dev-5e-08.cpp 
 - **error threshold = 1e-22**: file ./gaussian/math-gaussian-fixed-dev-1e-22.cpp 
 
-I would **strongly** suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
-The reason is that the distribution of x depends on ave and dev. 
-By using command 
-
-```
-python input-generator.py
-```
-
-A CSV file **inputs-fixed-dev.csv** will be created which contains the assignments to x, ave and dev (dev is fixed to 1.0). 
-
 **variable ranges**
 
 - **x** : [-10.0, 10.0]
@@ -137,16 +108,6 @@ It is located at **./gaussian**, and it has seven versions.
 - **error threshold = 1e-07**: file ./gaussian/math-gaussian-allvars-1e-07.cpp 
 - **error threshold = 5e-08**: file ./gaussian/math-gaussian-allvars-5e-08.cpp 
 - **error threshold = 1e-22**: file ./gaussian/math-gaussian-allvars-1e-22.cpp 
-
-I would **strongly** suggest using the input generation script **input-generator.py** located at **./gaussian** to generate inputs. 
-The reason is that the distribution of x depends on ave and dev. 
-By using command 
-
-```
-python input-generator.py
-```
-
-A CSV file **inputs-allvars.csv** will be created which contains the assignments to x, ave and dev. 
 
 **variable ranges**
 
@@ -180,6 +141,18 @@ There are totally three versions of this benchmarks and they are located at **./
 ## NOTE 
 
 - For all benchmarks, variables named with prefix "__const_" serve as constants. 
+
+
+- If you really have time, try to generate inputs for the **gaussian** benchmarks by script **input-generator.py** located at **./gaussian**. 
+It can be run by command 
+
+```
+python input-generator.py
+```
+
+CSV files **inputs-fixed-x.csv**, **input-fixed-ave.csv**, **input-fixed-dev.csv** and **input-allvars.csv** will be created. 
+They are for the corresponding gaussian benchmarks which are suggested by the .csv file name. 
+
 
 - Directory ./fptaylor/archive stores the old benchmarks... 
 
