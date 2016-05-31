@@ -144,8 +144,8 @@ There are totally three versions of this benchmarks and they are located at **./
 There are totally four versions of this benchmarks and they are located at **./p-in-circle**. 
 
 - **all-32** : located at ./p-in-circle-all-32
-- **0.0005** : located at ./p-in-circle-0.0005
-- **0.0001** : located at ./p-in-circle-0.0001
+- **0.0001** : located at ./p-in-circle-0.0001 
+- **5e-05** : located at ./p-in-circle-5e-05
 - **all-64** : located at ./p-in-circle-all-64 
 
 
@@ -155,8 +155,8 @@ There are totally four versions of this benchmarks and they are located at **./p
 There are totally four versions of this benchmarks and they are located at **./p-in-sphere**. 
 
 - **all-32** : located at ./p-in-sphere-all-32
-- **0.005** : located at ./p-in-sphere-0.005
 - **0.001** : located at ./p-in-sphere-0.001
+- **0.0005** : located at ./p-in-sphere-0.0005
 - **all-64** : located at ./p-in-sphere-all-64
   
 
