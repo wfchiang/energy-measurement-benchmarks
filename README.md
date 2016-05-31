@@ -135,6 +135,29 @@ There are totally three versions of this benchmarks and they are located at **./
 - **all-32** : file bal-reduction-all-32.cpp  
 - **mixed** : file bal-reduction-mixed.cpp 
 - **all-64** : file bal-reduction-all-64.cpp 
+
+
+
+## point-in-circle
+
+
+There are totally four versions of this benchmarks and they are located at **./p-in-circle**. 
+
+- **all-32** : located at ./p-in-circle-all-32
+- **0.0005** : located at ./p-in-circle-0.0005
+- **0.0001** : located at ./p-in-circle-0.0001
+- **all-64** : located at ./p-in-circle-all-64 
+
+
+
+# point-in-sphere 
+
+There are totally four versions of this benchmarks and they are located at **./p-in-sphere**. 
+
+- **all-32** : located at ./p-in-sphere-all-32
+- **0.005** : located at ./p-in-sphere-0.005
+- **0.001** : located at ./p-in-sphere-0.001
+- **all-64** : located at ./p-in-sphere-all-64
   
 
 
