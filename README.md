@@ -140,25 +140,16 @@ There are totally three versions of this benchmarks and they are located at **./
 
 ## point-in-circle
 
-
 There are totally four versions of this benchmarks and they are located at **./p-in-circle**. 
-
-- **all-32** : located at ./p-in-circle-all-32
-- **0.0001** : located at ./p-in-circle-0.0001 
-- **5e-05** : located at ./p-in-circle-5e-05
-- **all-64** : located at ./p-in-circle-all-64 
-
+The four versions are **all-32**, **1e-04**, **5e-05** and **all-64**. 
+The Makefile under **./p-in-circle** reveals how to generate the four versions. 
 
 
 # point-in-sphere 
 
 There are totally four versions of this benchmarks and they are located at **./p-in-sphere**. 
-
-- **all-32** : located at ./p-in-sphere-all-32
-- **0.001** : located at ./p-in-sphere-0.001
-- **0.0005** : located at ./p-in-sphere-0.0005
-- **all-64** : located at ./p-in-sphere-all-64
-  
+The four versions are **all-32**, **1e-03**, **5e-04** and **all-64**. 
+The Makefile under **./p-in-sphere** reveals how to generate the four versions. 
 
 
 ## NOTE 
