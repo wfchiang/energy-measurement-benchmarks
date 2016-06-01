@@ -140,8 +140,8 @@ There are totally three versions of this benchmarks and they are located at **./
 
 ## point-in-circle
 
-There are totally six versions of this benchmarks and they are located at **./p-in-circle**. 
-The four versions are **all-32**, **1e-04**, **1e-04-refined**, **5e-05**, **5e-05-refined** and **all-64**. 
+There are totally four versions of this benchmarks and they are located at **./p-in-circle**. 
+The four versions are **all-32**, **1e-04**, **5e-05** and **all-64**. 
 The Makefile under **./p-in-circle** reveals how to generate the four versions. 
 
 
