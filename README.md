@@ -146,7 +146,7 @@ The Makefile under **./p-in-circle** reveals how to generate the four versions.
 
 
 
-# point-in-sphere 
+## point-in-sphere 
 
 There are totally six versions of this benchmarks and they are located at **./p-in-sphere**. 
 The four versions are **all-32**, **1e-03**, **1e-04-refined**, **5e-04**, **5e-05-refined** and **all-64**. 
