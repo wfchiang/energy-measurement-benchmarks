@@ -1,6 +1,8 @@
 
 #include <stdio.h> 
 #include <assert.h> 
+#include "myrand.h" 
+
 
 #define N_REPEATS 100000000
 
@@ -27,21 +29,21 @@ MDet3x3 (D0 m0, D1 m1, D2 m2,
 
 int main (void) {
 
-  F0 a0 = 0.456; 
-  F0 a1 = 0.775; 
-  F0 a2 = -0.446; 
-  F0 b0 = -0.367; 
-  F0 b1 = -0.892; 
-  F0 b2 = 0.203; 
-  F0 c0 = -0.392; 
-  F0 c1 = 0.539; 
-  F0 c2 = -0.789; 
-  F0 d0 = 0.101; 
-  F0 d1 = -0.689; 
-  F0 d2 = 0.090; 
-  F0 e0 = -0.711; 
-  F0 e1 = 0.882; 
-  F0 e2 = 0.199; 
+  F0 a0 = randFP32(-1.0, 1.0); 
+  F0 a1 = randFP32(-1.0, 1.0);
+  F0 a2 = randFP32(-1.0, 1.0);
+  F0 b0 = randFP32(-1.0, 1.0);
+  F0 b1 = randFP32(-1.0, 1.0);
+  F0 b2 = randFP32(-1.0, 1.0);
+  F0 c0 = randFP32(-1.0, 1.0);
+  F0 c1 = randFP32(-1.0, 1.0);
+  F0 c2 = randFP32(-1.0, 1.0);
+  F0 d0 = randFP32(-1.0, 1.0);
+  F0 d1 = randFP32(-1.0, 1.0);
+  F0 d2 = randFP32(-1.0, 1.0);
+  F0 e0 = randFP32(-1.0, 1.0);
+  F0 e1 = randFP32(-1.0, 1.0);
+  F0 e2 = randFP32(-1.0, 1.0);
 
   for (int i = 0 ; i < N_REPEATS ; i++) {
     F1 ae_0 = (F1)a0 - (F1)e0; 
