@@ -131,10 +131,11 @@ There are totally four versions of this benchmarks and they are located at **./h
 
 ## balanced-reduction 
 
-There are totally three versions of this benchmarks and they are located at **./balanced-reduction**. 
+There are totally four versions of this benchmarks and they are located at **./balanced-reduction**. 
 
 - **all-32** : file bal-reduction-all-32.cpp  
 - **mixed** : file bal-reduction-mixed.cpp 
+- **data-32** : file bal-reduction-data32.cpp 
 - **all-64** : file bal-reduction-all-64.cpp 
 
 
