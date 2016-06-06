@@ -4,11 +4,12 @@
 
 ## fptaylor -- sine
 
-It is located at **./fptaylor/sine**, and it has four versions. 
+It is located at **./fptaylor/sine**, and it has five versions. 
 
 - **all-32**: located at ./fptaylor/sine/all-32 
 - **error threshold = 4e-07**: located at ./fptaylor/sine/4e-07
 - **error threshold = 2e-07**: located at ./fptaylor/sine/2e-07
+- **error threshold = 1e-07**: located at ./fptaylor/sine/1e-07 
 - **all-64** : located at ./fptaylor/sine/all-64
 
 For each version, I had created 100 programs which take different inputs. 
