@@ -21,7 +21,7 @@ int main (int argc, char **argv) {
 
 
   for (int ii = 0 ; ii < 100000000 ; ii++) {
-    rel64 = ((__const_4 / (dev * __const_3)) * (exp2f((__const_6 * (((x - ave) * (x - ave)) / (__const_5 * (dev * dev)))))));
+    rel64 = ((__const_4 / (dev * __const_3)) * (exp2((__const_6 * (((x - ave) * (x - ave)) / (__const_5 * (dev * dev)))))));
   }
 
   return 0;

@@ -22,7 +22,7 @@ int main (int argc, char **argv) {
 
   
   for (int ii = 0 ; ii < 100000000 ; ii++) {
-    rel64 = ((__const_4 / (__const_1 * __const_3)) * (exp2f((__const_6 * (((x - ave) * (x - ave)) / (__const_5 * (__const_1 * __const_1)))))));
+    rel64 = ((__const_4 / (__const_1 * __const_3)) * (exp2((__const_6 * (((x - ave) * (x - ave)) / (__const_5 * (__const_1 * __const_1)))))));
   }
 
   return 0; 
