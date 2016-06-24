@@ -14,7 +14,7 @@
 #define FPT_6 double 
 #define FPT_7 double 
 #define FPT_8 double 
-#define FPT_9 double 
+
 
 
 int main (int argc, char *argv[]) {
@@ -25,10 +25,10 @@ int main (int argc, char *argv[]) {
   FPT_3 r2   = (FPT_3)r * (FPT_3)r; 
   FPT_4 hr2  = (FPT_4)h2 + (FPT_4)r2; 
   FPT_5 pir  = PI * (FPT_5)r; 
-  FPT_6 pr2  = PI * (FPT_6)r2; 
 
-  FPT_8 temp = (FPT_8)pir * (FPT_8)sqrt((FPT_7)hr2); 
-  FPT_9 rel  = (FPT_9)pr2 + (FPT_9)temp; 
+  FPT_6 tm1  = sqrt((FPT_6)hr2); 
+  FPT_7 tm2  = (FPT_7)r + (FPT_7)tm1; 
+  FPT_8 rel  = (FPT_8)pir * (FPT_8)tm2; 
   
   return 0; 
 }
