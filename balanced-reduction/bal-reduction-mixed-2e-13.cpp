@@ -15,7 +15,7 @@ extern "C" {
 
 // #define N 512 
 #define K 100000000
-#define N_REPEATS 10000000
+#define N_REPEATS 1000000
 
 
 
