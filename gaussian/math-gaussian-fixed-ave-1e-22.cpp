@@ -15,7 +15,7 @@ int main (int argc, char **argv) {
 	double __const_0 = 0.0;
 
 	for (int ii = 0 ; ii < 10000000 ; ii++) {
-	double ____expr_0 = ((__const_4 / (dev * __const_3)) * (exp2((__const_6 * (((x - __const_0) * (x - __const_0)) / (__const_5 * (dev * dev)))))));
+	double ____expr_0 = ((__const_4 / (dev * __const_3)) * (exp((__const_6 * (((x - __const_0) * (x - __const_0)) / (__const_5 * (dev * dev)))))));
 
 }
 

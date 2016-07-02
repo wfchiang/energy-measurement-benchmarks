@@ -1,3 +1,8 @@
+
+
+
+
+
 #include <iostream>
 #include <math.h>
 #include "myrand.h" 
@@ -15,7 +20,7 @@ int main (int argc, char **argv) {
   double __const_2 = 0.0;
 
   for (int ii = 0 ; ii < 10000000 ; ii++) {
-    double ____expr_0 = ((__const_4 / (dev * __const_3)) * (exp2((__const_6 * (((__const_2 - ave) * (__const_2 - ave)) / (__const_5 * (dev * dev)))))));
+    double ____expr_0 = ((__const_4 / (dev * __const_3)) * (exp((__const_6 * (((__const_2 - ave) * (__const_2 - ave)) / (__const_5 * (dev * dev)))))));
 
   }
 

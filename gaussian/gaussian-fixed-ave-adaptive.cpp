@@ -42,15 +42,15 @@ int main (int argc, char **argv) {
     }
 
   MIX0:
-    rel64 = ((__const_4 / (dev64 * __const_3)) * (double)(exp2f((float)(__const_6 * ((double)((float)(x64 - __const_0) * (float)(x64 - __const_0)) / (__const_5 * (dev64 * dev64)))))));
+    rel64 = ((__const_4 / (dev64 * __const_3)) * (double)(expf((float)(__const_6 * ((double)((float)(x64 - __const_0) * (float)(x64 - __const_0)) / (__const_5 * (dev64 * dev64)))))));
     goto JoinPoint; 
 
   MIX1:
-    rel32 = (((float)__const_4 / (float)(dev64 * __const_3)) * (exp2f(((float)__const_6 * (((float)(x64 - __const_0) * (float)(x64 - __const_0)) / ((float)__const_5 * (dev * dev)))))));
+    rel32 = (((float)__const_4 / (float)(dev64 * __const_3)) * (expf(((float)__const_6 * (((float)(x64 - __const_0) * (float)(x64 - __const_0)) / ((float)__const_5 * (dev * dev)))))));
     goto JoinPoint; 
 
   MIX2: 
-    rel64 = ((double)((float)__const_4 / ((float)dev64 * (float)__const_3)) * (double)(exp2f((float)(__const_6 * ((double)((float)(x64 - __const_0) * (float)(x64 - __const_0)) / (__const_5 * (dev64 * dev64)))))));
+    rel64 = ((double)((float)__const_4 / ((float)dev64 * (float)__const_3)) * (double)(expf((float)(__const_6 * ((double)((float)(x64 - __const_0) * (float)(x64 - __const_0)) / (__const_5 * (dev64 * dev64)))))));
     goto JoinPoint;
 
   JoinPoint:
