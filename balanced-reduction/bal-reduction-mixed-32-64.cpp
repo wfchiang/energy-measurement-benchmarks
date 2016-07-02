@@ -12,7 +12,7 @@ E = 1e-04
 
 // #define N 512 
 #define K 100000000
-#define N_REPEATS 1000000
+#define N_REPEATS 10000000
 
 
 
