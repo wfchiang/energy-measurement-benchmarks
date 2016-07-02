@@ -8,7 +8,7 @@ E = 1e-04
 #include <time.h>  
 extern "C" {
 #include "quadmath.h" 
-}
+} 
 
 #include "myrand.h" 
 
@@ -32,11 +32,15 @@ int main (int argc, char **argv) {
 
   for (int r = 0 ; r < N_REPEATS ; r++) {
 
-    __float128 arr2[256]; 
+    __float128 arr2[64]; 
 
-    for (int i = 0 ; i < 256 ; i++) 
-      arr2[i] = ((__float128)arr[i] + (__float128)arr[i+256]); 
+    for (int g = 256 ; g > 64 ; g = g / 2) {
+      for (int i = i ; i < g ; i++) 
+	arr[i] = arr[i] + arr[i+g]; 
+    }
 
+    for (int i = 0 ; i < 64 ; i++) 
+      arr2[i] = (__float128)(arr[i] + arr[i+64]); 
 
     for (int g = 128 ; g > 0 ; g = g / 2) {
 
